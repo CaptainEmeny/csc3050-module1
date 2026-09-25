@@ -1,1 +1,1 @@
-This repo contains all our work for assignment 1 for CS3050 web programming course at FSU. Our end gola is to make a full stack web application. As of 9/24/2026 authors are Douglas Mata Sanchez and Kevin Borges. 
+This repo contains all our work for our initial full-stack web application for CS3050 web programming course at FSU. Our end goal is to make a full stack web application. As of 9/24/2026 authors are Douglas Mata Sanchez and Kevin Borges. 
