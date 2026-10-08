@@ -44,6 +44,10 @@ open the single html file.
 * To use the program, you will need to open the html file within a browser.
 * Nothing needs to be done before the next meeting; Everything was completed within this single meeting.\
 
+
+
+
+
 # 2026-10-01: Day 2 Workshop:
 * **Present:** Douglas Mata Sanchez, Kevin Borges
 * **Scribe:** Douglas
@@ -69,6 +73,9 @@ open the single html file.
   - No commitments before the next day 2. Even though, we didn't meet all our goals, we will likely be able to resolve the card-height bug, add javascript functionality, and finalize our CSS for the cards in our next day-2 meeting.  
 
 
+
+
+
   # 2026-10-01: Day 2 Workshop:
 * **Present:** Kevin Borges, Douglas Mata Sanchez
 * **Scribe:** Kevin
@@ -78,17 +85,19 @@ open the single html file.
   - Douglas: One small issue that we should address is the height of the cards, as some of them are taller than others. We also must add some functionality to the card to not make the page so static. As of now, we are currently splitting the cards with margins instead of gaps, which should also be addressed.
   -  
 * **Plan**
-  - *Goals for today:* Douglas will focus on the Javascript side of the code, figuirng out how to add dynamic features that will be utilized by the user. Kevin will focus on adjusting the CSS; making sure that the website flows well with different screen sizes.
+  - *Goals for today:* Douglas will focus on the Javascript side of the code, figuring out how to add dynamic features that will be utilized by the user. Kevin will focus on adjusting the CSS; making sure that the website flows well with different screen sizes.
 * **Build**
-  - *Shipped:* 
+  - *Shipped:* We successfully restyled the CSS to make it look more clean, whilst adding some compatibility with bigger and smaller screens. Each card also got a "Read More" section, where you can see more details on the website, with the card expanding to show more info.
 * **Review**
-  - 
+  - Created a new Branch "CSS-Styling" which will be mostly used to adjust these CSS changes. They will be unmerged until it is confirmed that the style is finalized, and that there is no visual bugs with the stylesheet.
 
-  - 
+  - Created a button within every card div that expands the height to allow for more contents underneath it. This is a great introduction integrating JavaScript into our page, and will end up going into "features" for the time being, with the "CSS-Styling" likely to be merged with it soon to finalize styling the buttons.
+
+  - Our project at the end of the day still displayed 3 responsive cards within a div container.Heightwise, the cards are still not the same size, which will nee to be adjusted at some point going forward. The width works as expected though, with the width expanding up to 20rem of of the screen.
 
 * **Handoff package:** 
-  - **Stopping point in the project:** 
+  - **Stopping point in the project:** Displayed 3 updated cards, each with an image, recipe title, and description along with a button to see recipe information. 
   
-  - 
+  - There was no "READ-ME.md" created yet, though the code is fairly simple still as opening the project is as easy as running a live server on the relevant HTML file. A "READ-ME.md" file though will likely be included soon, to ensure we can keep track of everything, as well as anyone else who picks up this project.
 
   -  
