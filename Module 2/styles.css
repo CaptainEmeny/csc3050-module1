@@ -1,31 +1,39 @@
 body{
-    background-color: #ffe5b7;
+    background-color: #ffffff;
 }
 
-
-h1 {
-font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-}
 p {
     font-family: Arial, Helvetica, sans-serif;
+
+}
+h1 {
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 6rem;
+    text-align: center;
+    width: 100%;
+    
 }
 img {
-    width: 80%;
+    width: 70%;
     aspect-ratio: 1/1;
 
 
     border-radius: 1rem;
-    border-color:black;
+    border-color:#c8c8c8;
     border-width: 4px;
     border-style: solid;
 }
 
 .card-container {
     display: flex;
+    flex-direction: column;
+
     align-items: baseline;
     justify-content: center;
+    
+    gap: 2rem;
 
-    width: 70%;
+    width: 100%;
 
 }
 .card {
@@ -34,29 +42,66 @@ img {
     align-items: center;
 
     padding: 1.5rem;
-    margin-left: 1rem;
-    margin-right: 1rem;
 
-    width: 50rem;
+    width: 100%;
 
-    background-color: #f3ead4;
+    background-color: #e6e6e6;
 
-    border-radius: 1rem;
-    border-color:black;
-    border-width: 2px;
-    border-style: solid;
+    border-radius: 5rem;
+
 }
 .card:hover{
-    background-color: #ded7c3;
     cursor:pointer;
+
+    background-color: #cbcbcb;
+    border-color: #a2a2a2;
+    box-shadow: inset 0 0 3px #000;
 }
 .title{
-    font-size:2rem;
-    align-items: baseline;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size:5rem;
+    text-align: center;
 
 }
 .description{
-    font-size: 1.2rem;
-
+    font-size: 3rem;
     text-overflow: ellipsis;
+}
+
+@media screen and (min-width: 768px) {
+
+    h1{
+        font-size: 3rem;
+    }
+
+    .card-container {
+        display: flex;
+        flex-direction: row;
+
+        align-items: baseline;
+        justify-content: left;
+    
+        gap: 1rem;
+
+        width: 90%;
+    }
+
+    .card {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        padding: 1.5rem;
+        width: 20rem;
+        
+        border-radius: 30px;
+
+    }
+    .title{
+        font-size:1.8rem;
+    }
+
+    .description{
+        font-size:1.5rem;
+    }
 }
