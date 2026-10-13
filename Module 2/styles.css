@@ -64,9 +64,44 @@ img {
 
 }
 .description{
+<<<<<<< HEAD
     font-size: 3rem;
     text-overflow: ellipsis;
 }
+=======
+    font-size: 1.2rem;
+    text-overflow: ellipsis;
+}
+ 
+
+/*Dropdown Menu CSS*/
+.dropdown-button{
+    background-color: rgb(0, 0, 0);
+    padding: 0.7rem;
+    font-size: 1.2rem;
+    border: 3px solid black;
+    border-radius: 1rem;
+    cursor: pointer;
+    text-align: center;
+    color: white;
+}
+
+.dropdown-button:hover{
+    background-color: #ff8801fa;
+}
+
+.dropdown-menu{
+    margin-top: 1.3rem;
+    background-color: #f9f9f9;
+    border: 0.2rem solid black;
+    font-size: 1.2rem; 
+    font-family: Arial, Helvetica, sans-serif; 
+    padding: 0.6rem; 
+    padding-left: 0.4rem; 
+
+}
+
+>>>>>>> 2413a33bb63263da0702a24ed3d3d40876d40fa2
 
 @media screen and (min-width: 768px) {
 
@@ -102,6 +137,10 @@ img {
     }
 
     .description{
+<<<<<<< HEAD
         font-size:1.5rem; 
+=======
+        font-size:1.5rem;
+>>>>>>> 2413a33bb63263da0702a24ed3d3d40876d40fa2
     }
 }
