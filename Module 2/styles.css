@@ -64,11 +64,6 @@ img {
 
 }
 .description{
-<<<<<<< HEAD
-    font-size: 3rem;
-    text-overflow: ellipsis;
-}
-=======
     font-size: 1.2rem;
     text-overflow: ellipsis;
 }
@@ -101,7 +96,6 @@ img {
 
 }
 
->>>>>>> 2413a33bb63263da0702a24ed3d3d40876d40fa2
 
 @media screen and (min-width: 768px) {
 
@@ -137,10 +131,6 @@ img {
     }
 
     .description{
-<<<<<<< HEAD
-        font-size:1.5rem; 
-=======
         font-size:1.5rem;
->>>>>>> 2413a33bb63263da0702a24ed3d3d40876d40fa2
     }
 }
