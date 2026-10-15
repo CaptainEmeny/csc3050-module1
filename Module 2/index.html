@@ -6,7 +6,6 @@
 </header>
 <body>
     <h1><b>Cards</b></h1>
-    <script src="script.js"></script>
     <div class="card-container">
 
         <!--BBQ CHICKEN WINGS-->
@@ -21,12 +20,10 @@
 
          <!--DROP DOWN for BBQ Chicken Wings-->
         <button class="dropdown-button">More Info</button>
-        <div class="dropdown-menu">
-            <ol>
-                <li>Duration: 20 minutes</li>
-                <li>Difficulty: Easy</li>
-                <li>Cuisine: American</li>
-            </ol>
+        <div class="dropdown-menu" 
+        data-duration="45 minutes" 
+        data-difficulty="Medium" 
+        data-cuisine="Korean">
         </div>
         </div>
         
@@ -43,12 +40,10 @@
 
         <!--DROP DOWN for Drop Biscuits-->
         <button class="dropdown-button">More Info</button>
-        <div class="dropdown-menu">
-            <ol>
-                <li>Duration: 20 minutes</li>
-                <li>Difficulty: Easy</li>
-                <li>Cuisine: American</li>
-            </ol>
+        <div class="dropdown-menu" 
+        data-duration="60 minutes" 
+        data-difficulty="Easy" 
+        data-cuisine="English">
         </div>
         </div>
 
@@ -60,24 +55,20 @@
                 <b>Chocolate Chip Cookies</b>
             </p>
             <p class= "description">
-                <b>Delicious cookie recipe.</b>
+                Delicious cookie recipe.
             </p>
 
          <!--DROP DOWN for Chocolate Chip Cookies-->
         <button class="dropdown-button">More Info</button>
-        <div class="dropdown-menu">
-            <ol>
-                <li>Duration: 20 minutes</li>
-                <li>Difficulty: Easy</li>
-                <li>Cuisine: American</li>
-            </ol>
-        </div>    
+            <div class="dropdown-menu" 
+            data-duration="20 minutes" 
+             data-difficulty="Easy" 
+             data-cuisine="American">
+            </div>    
         </div>
 
-
-
     </div>
-
+<script src="script.js"></script>
 </body>
 <footer>
 
