@@ -92,21 +92,13 @@ img {
     padding-left: 0.4rem; 
 }
 
-
 @media (max-width: 768px) {
     h1{
-        font-size: 3rem;
+        font-size: 4rem;
     }
 
     .card-container {
-        display: flex;
-        flex-direction: row;
-
-        align-items: baseline;
-        justify-content: left;
-    
-        gap: 1rem;
-        width: 98%;
+        width: 100%;
 
     }
 
@@ -115,14 +107,7 @@ img {
     }
 
     .card {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-
-        padding: 1.5rem;
         width: 100%;
-        
-        border-radius: 30px;
     }
     .title{
         font-size:1.8rem;
@@ -132,3 +117,29 @@ img {
         font-size:1.5rem;
     }
 }
+
+@media (max-width: 480px) {
+    h1{
+        font-size: 2.5rem;
+    }
+
+    .card-container {
+        width: 100%;
+    }
+
+    img {
+        width: 65%;
+    }
+
+    .card {
+        width: 100%;
+    }
+    .title{
+        font-size:2rem;
+    }
+
+    .description{
+        font-size:1.2rem;
+    }
+}
+
