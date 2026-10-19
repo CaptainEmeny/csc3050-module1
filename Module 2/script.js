@@ -49,7 +49,7 @@ const fillMenu = event => {
                 <li>Cuisine: ${cuisine}</li>
             </ol>
         `;
-        //dropdown.classList.add("open");
+       
         dropdown.hidden = false;
         button.setAttribute("aria-expanded", "true");
     }
