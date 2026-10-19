@@ -7,12 +7,9 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 });
 
-// uses open flag to determine whether to show or hide the menu, and fills the menu with the specific recipe data from the data attributes
+// uses aria attributes (aria-controls, aria-expanded) to manage dropdown menus
 const fillMenu = event => {
     const button = event.currentTarget;
-    //const card = event.currentTarget.closest(".card");
-   //const dropdown = card.querySelector(".dropdown-menu");
-
    const menuId = button.getAttribute("aria-controls");
    const dropdown = document.getElementById(menuId);
 
@@ -21,7 +18,6 @@ const fillMenu = event => {
     // Close all other open dropdowns
     document.querySelectorAll(".dropdown-menu").forEach(menu => {
         if (menu !== dropdown && !menu.hidden) {
-            //menu.classList.remove("open");
             menu.hidden = true;
             menu.innerHTML = "";
 
@@ -44,13 +40,7 @@ const fillMenu = event => {
         dropdown.hidden = true;
         dropdown.innerHTML = "";
         button.setAttribute("aria-expanded", "false");
-    }
-
-    //if (dropdown.classList.contains("open")) {
-        // Hides menu
-      //  dropdown.classList.remove("open");
-        //dropdown.innerHTML = "";
-     else {
+    } else {
         // Shows menu
         dropdown.innerHTML = `
             <ol>
