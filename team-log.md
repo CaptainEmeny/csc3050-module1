@@ -100,6 +100,7 @@ open the single html file.
   
   - There was no "READ-ME.md" created yet, though the code is fairly simple still as opening the project is as easy as running a live server on the relevant HTML file. A "READ-ME.md" file though will likely be included soon, to ensure we can keep track of everything, as well as anyone else who picks up this project.
 
+
 ## 2026-10-15: Day 2 Workshop:
 * **Present:** Douglas Mata, Kevin Borges
 * **Scribe:** Douglas
@@ -122,3 +123,28 @@ open the single html file.
   - **Commitments before next Day 2:**  
   - We realized that the text on the buttons should be updated once a more info menu is open so that the user knows that when they click the button a second time, it will be closed. Douglas will update that for next week.  
   - Otherwise, no commitments, waiting for next part of project in module 3. 
+
+
+  ## 2026-10-22: Day 2 Workshop:
+* **Present:** Kevin Borges, Douglas Mata
+* **Scribe:** Kevin Borges
+* **Standup**
+  - **Douglas:** We're currently in a good place, we're looking forward to working on a new thing (specifically express servers.) My Goal is to understand how it works, and then get some "elementary code" to run to grasp the basics. Once I understand how it works, I will try to implement this into the website. We are also going to look into an API we can use to
+  - **Kevin:** I am excited to dig into React Native and get some more practice in working with React. I think where we left off in module 2 was somewhat lackluster, and I am hoping to personally make this website more distinct with more advanced UI and functionality.
+* **Plan**
+  1. Find an API for the recipes to connect to the Express server
+  2. Build the Express server with basic logic to gain a basic understanding of the server.
+  3. Begin the transfer of all the HTML and CSS over to a react framework.
+* **Build** 
+  **Shipped:**
+  - Transfered HTML and CSS to React Vite.
+  - Linked up api to the server to see the responses from the server-side.
+* **Review**
+  - The HTML and CSS was successfully transferred over in a matter of minutes to new React framework we are using. This being said, the javascript doesn't work as intended now, and WILL need to be altered, likely before more changes are made to the cards. 
+  - The server-side of the project has been started, allowing us to start connecting to the api which in turn gets us well into the server-side logic.
+* **Handoff package:**
+  - Nothing has been started on the handoff package just yet, we are waiting for more progress to be done to get a better idea of what will become of the project.  
+* **Commitments before next Day 2:**
+  - Get JavaScript to work again within code.
+  - Make the Cards their own component.
+  - Link up the server to the web page, allowing for communications between the front-end and back-end. 
