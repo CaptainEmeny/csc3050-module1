@@ -1,19 +1,15 @@
-import importedRecipes from "../assets/recipes.json"
-import { useState } from "react";
-import Card from "./Card";
+import GridCard from "./GridCard";
+import recipes from "../assets/recipes.json"
+
 
 function CardGenerator(){
 
-    const [recipes, setRecipes] = useState(importedRecipes.recipes);
     
 
     return(
-        <>
-        
-        {recipes.map(r => (
-            <Card recipe = {r}/>
-        ))}         
-        </>
+        <div className= "card-container"> 
+            {recipes.recipes.map(r => (<GridCard recipe = {r}/>))}         
+        </div>
     );
 }
 

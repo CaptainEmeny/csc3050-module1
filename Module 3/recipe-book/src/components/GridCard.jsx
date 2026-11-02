@@ -1,4 +1,4 @@
-function Card({recipe}){
+function GridCard({recipe}){
     
 
     return(
@@ -29,4 +29,4 @@ function Card({recipe}){
     );
 }
 
-export default Card
+export default GridCard
