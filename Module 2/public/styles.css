@@ -1,10 +1,16 @@
-body{
+#main-body{
     display: grid; 
     grid-template-columns: 1fr;
     justify-items: stretch;
     margin: 0;
     background-color: #ffffff;
 
+}
+
+#recipe-body{
+    display: grid; 
+    padding: 0 4rem;
+    gap : 10rem; 
 }
 
 p {
@@ -18,7 +24,7 @@ h1 {
     width: 100%;
 }
 
-img {
+.main-card-img {
     width: 70%;
     aspect-ratio: 1/1;
     border-radius: 1rem;
@@ -39,7 +45,7 @@ img {
     box-sizing: border-box;
 }
 
-.card {
+.main-card {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -51,7 +57,7 @@ img {
     box-sizing: border-box; 
 }
 
-.card:hover{
+.main-card:hover{
     cursor:pointer;
     background-color: #cbcbcb;
     border-color: #a2a2a2;
@@ -104,6 +110,70 @@ img {
 .dropdown-menu[hidden]{
     display: none; 
 }
+
+#div-container{
+    display: grid; 
+    grid-template-columns: min(30rem, 50vw) 1fr;
+    grid-template-areas: 
+        "left right"
+        "bottom bottom";
+        gap : 2rem;
+
+}
+
+#recipe-card{
+    grid-area: left;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 1 1 0;
+    min-width: 0;  
+    width: min(30rem, 30vw);
+    padding: 1rem;
+    background-color: #e6e6e6;
+    border-radius: 2rem;
+    border: black .3rem solid;
+    box-sizing: border-box; 
+}
+
+#recipe-card-image{
+    width: 100%; 
+    aspect-ratio: 1/1;
+    border-radius: 1rem;
+    border-color:#c8c8c8;
+    border-width: 4px;
+    border-style: solid;
+}
+
+#ingredients-container{
+    grid-area: right;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 1 1 0;
+    min-width: 0;  
+    padding: 1rem;
+    background-color: #e6e6e6;
+    border-radius: 2rem;
+    border: black .3rem solid;
+    box-sizing: border-box; 
+}
+
+#instructions-container{
+    grid-area: bottom;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 1 1 0;
+    min-width: 0;  
+    width: 100%; 
+    padding: 1rem;
+    background-color: #e6e6e6;
+    border-radius: 1rem;
+    border: black .3rem solid;
+    box-sizing: border-box; 
+}
+
 
 @media (min-width: 769px) {
     h1{
