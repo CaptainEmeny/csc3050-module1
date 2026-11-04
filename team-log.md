@@ -100,7 +100,8 @@ open the single html file.
   
   - There was no "READ-ME.md" created yet, though the code is fairly simple still as opening the project is as easy as running a live server on the relevant HTML file. A "READ-ME.md" file though will likely be included soon, to ensure we can keep track of everything, as well as anyone else who picks up this project.
 
-## 2026-10-15: Day 2 Workshop:
+
+# 2026-10-15: Day 2 Workshop:
 * **Present:** Douglas Mata, Kevin Borges
 * **Scribe:** Douglas
 * **Standup**
