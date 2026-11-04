@@ -12,7 +12,7 @@ Media Queries were used to allow the cards to change size when viewed on smaller
 
 ### **JAVASCRIPT OVERVIEW**:
 
-Our JavaScript currently works by using the ARIA attributes to locate the corct menu based on the button that was pressed. Clicking the more info button will cause it to close, and opening a new card will cause the previous one to close as well. We upload all the appropriate information for each recipe to the data, and then the information is pulled once the button is clicked and displayed for each card from the data category. Eventually, this will be useful once we connect this to an API so that information for hundreds of recipes will be automatically uploaded depending on the recipe the user wants more information about rather than directly writing on each card. The use of classes also makes it easier to style each info card the same way. Note that as of now, none of the DOM behaviors will work until all the JavaScript information is loaded, which hopefully does not lead to slow functionality as the amount of data increases. 
+Our JavaScript currently works by using the ARIA attributes to locate the corct menu based on the button that was pressed. Clicking the more info button will cause it to close, and opening a new card will cause the previous one to close as well. We upload all the appropriate information for each recipe to the data, and then the information is pulled once the button is clicked and displayed for each card from the data category. Eventually, this will be useful once we connect this to an API so that information for hundreds of recipes will be automatically uploaded depending on the recipe the user wants more information about rather than directly writing on each card.
 
 ### **CHALLENGES**:
 
