@@ -1,0 +1,38 @@
+{
+    "recipes": [{
+        "id" : "bbq-chicken-wings",
+        "name": "BBQ Korean Chicken",
+        "img": "bbq-chicken-wings.jpg",
+        "description": "Flavorful wings perfect for any occasion.",
+        "duration": "20",
+        "difficulty": "Easy",
+        "cuisine": "Korean"
+    },
+    {
+        "id": "chocolate-chip-cookies",
+        "name": "Chocolate Chip Cookies",
+        "img": "chocolate-chip-cookies.png",
+        "description": "Delicious cookie recipe.",
+        "duration": "45",
+        "difficulty": "Medium",
+        "cuisine": "American"
+    },
+    {
+        "id": "drop-biscuits",
+        "name": "Drop Biscuits",
+        "img": "drop-biscuits.jpg",
+        "description": "Delicious breakfast for the whole family.",
+        "duration": "45",
+        "difficulty": "Easy",
+        "cuisine": "English"
+    },
+    {
+        "id": "adobo",
+        "name": "Adobo",
+        "img": "adobo.jpeg",
+        "description": "A delicious Filipino dish ",
+        "duration": "47",
+        "difficulty": "Medium",
+        "cuisine": "Filipino"
+    }]
+}
