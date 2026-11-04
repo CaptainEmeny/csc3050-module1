@@ -9,8 +9,9 @@ function SearchBar({setCard}){
 
 
     return(
-        <div>
-            <input  id="searchBar" type="text" onChange={updateFilter}/>
+        <div id="searchBar">
+            <button id= "searchButton"/>
+            <input id= "searchInput" type="text" onChange={updateFilter}/>
         </div>
     );
 }

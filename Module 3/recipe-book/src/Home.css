@@ -38,7 +38,6 @@ img {
     align-items: center;
     
     grid-template-columns: auto auto;
-    background-color: dodgerblue;
 }
 
 .card-container {
