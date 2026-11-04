@@ -122,3 +122,55 @@ open the single html file.
   - **Commitments before next Day 2:**  
   - We realized that the text on the buttons should be updated once a more info menu is open so that the user knows that when they click the button a second time, it will be closed. Douglas will update that for next week.  
   - Otherwise, no commitments, waiting for next part of project in module 3. 
+
+   ## 2026-10-22: Day 2 Workshop:
+* **Present:** Kevin Borges, Douglas Mata
+* **Scribe:** Kevin Borges
+* **Standup**
+  - **Douglas:** We're currently in a good place, we're looking forward to working on a new thing (specifically express servers.) My Goal is to understand how it works, and then get some "elementary code" to run to grasp the basics. Once I understand how it works, I will try to implement this into the website. We are also going to look into an API we can use to.
+  - **Kevin:** I am excited to dig into React Native and get some more practice in working with React. I think where we left off in module 2 was somewhat lackluster, and I am hoping to personally make this website more distinct with more advanced UI and functionality.
+* **Plan**
+  1. Find an API for the recipes to connect to the Express server
+  2. Build the Express server with basic logic to gain a basic understanding of the server.
+  3. Begin the transfer of all the HTML and CSS over to a react framework.
+* **Build** 
+  **Shipped:**
+  - Transfered HTML and CSS to React Vite.
+  - Linked up api to the server to see the responses from the server-side.
+* **Review**
+  - The HTML and CSS was successfully transferred over in a matter of minutes to new React framework we are using. This being said, the javascript doesn't work as intended now, and WILL need to be altered, likely before more changes are made to the cards. 
+  - The server-side of the project has been started, allowing us to start connecting to the api which in turn gets us well into the server-side logic.
+* **Handoff package:**
+  - Nothing has been started on the handoff package just yet, we are waiting for more progress to be done to get a better idea of what will become of the project.  
+* **Commitments before next Day 2:**
+  - Get JavaScript to work again within code.
+  - Make the Cards their own component.
+  - Link up the server to the web page, allowing for communications between the front-end and back-end. 
+
+   ## 2026-10-29: Day 2 Workshop:
+* **Present:** Kevin Borges, Douglas Mata
+* **Scribe:** Douglas Mata
+* **Standup**
+  - **Douglas:** I played around some more with the API, however, I have not been successful in actually linking it to the website yet. Hopefully, I will be able to establish a connection between my express server the api and the website by the end of the work session. 
+  - **Kevin:** I was able to get information fed into the cards from a JSON file that we will use to feed information to the website using API. Images are not working yet, hopefully by the end of this session that will work. Our eventual end goal in terms of functionality is that adding a new recipe to the webpage is as easy as just adding information about a recipe to the JSON file and then a card will be generated with that recipe information. I was also able to create a mapping function to facilitate this, hopefully this format will allow us to implement a searching fucntion in the future. 
+
+* **Plan**
+  1. Get images working. Right now we assume it is because there is not an established file path and we have to upload the iamges to the server some other way directly as opposed to getting it from directly from a folder. 
+  2. Establish a connection between express server and api.
+  3. Establish a connection between express server and website and have all 3 compoents communicating. 
+
+* **Build** 
+  **Shipped:** 1 and 3
+
+* **Review**
+    - We were able to import images into the website by putting them into a public folder accessing them that way. We previously had them in the sources folder which we believe makes them compile them differently. Once we put them in the pubic folder we are able to access them directly. 
+    - We got a server working and fed our html, css, and js into the server. We have yet to connect the API to it. 
+
+* **Handoff package:**
+    - **Stopping point:** As of right now we both essentially have our individual components fully functional. We still need to actually merge them to get them both working. 
+
+* **Commitments before next Day 2:**
+    - We have been moving a little slowly in this project. We are both committed to coming together an extra day before Thursday to merge them and get them working so we are at a better place for next Thursday. 
+    - To do this we both need to have our pieces fully functional before that next early session. 
+    - I will also begin work on the API contract once the API is connected to the server. Most of the work on this is expected to be completed next Thursday.
+  
