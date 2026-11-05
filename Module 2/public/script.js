@@ -65,14 +65,18 @@ async function fetchRecipeData(recipe) {
         console.log(data);
         return data; 
     } catch (error) {
-        console.error('Error:', error);
+        console.error('Error fetching recipe data:', error);
     }
 }
 
 async function displayRecipeData() {
     
     const recipeData = await fetchRecipeData("Arrabiata"); // Call the function with a sample recipe name
+    const recipe = recipeData.meals[0].strMeal || "N/A";
+    console.log(`Recipe Name: ${recipe}`);
+    await saveRecipeToServer(recipe); // Save the recipe to the server
 
+    const id = recipeData.meals[0].idMeal || "N/A";
     const country_origin = recipeData.meals[0].strCountry || "N/A"; 
     const instructions = recipeData.meals[0].strInstructions || "N/A"; 
     const category = recipeData.meals[0].strCategory || "N/A";
@@ -88,12 +92,13 @@ async function displayRecipeData() {
     }
 
     // Print the recipe data to the console
-    //console.log(`Country of Origin: ${country_origin}`);
-   // console.log(`Instructions: ${instructions}`);
-   // console.log(`Category: ${category}`);
-   // console.log(`Image URL: ${png}`);
-   // console.log(`Ingredients: ${ingredients.join(", ")}`);
+    console.log(`Country of Origin: ${country_origin}`);
+    console.log(`Instructions: ${instructions}`);
+    console.log(`Category: ${category}`);
+    console.log(`Image URL: ${png}`);
+    console.log(`Ingredients: ${ingredients.join(", ")}`);
 
 }
 
 displayRecipeData(); 
+fetchRecipeData("Arrabiata");
