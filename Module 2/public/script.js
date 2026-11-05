@@ -69,12 +69,22 @@ async function fetchRecipeData(recipe) {
     }
 }
 
-async function displayRecipeData() {
+async function saveRecipeToServer(recipe) {
+    const response = await fetch('/save-recipe', {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json'
+        },
+        body: JSON.stringify(recipe)
+    });
+
+    const result = await response.json();
+    console.log('Recipe saved successfully:', result);  
+}
+
+async function createRecipeData() {
     
     const recipeData = await fetchRecipeData("Arrabiata"); // Call the function with a sample recipe name
-    const recipe = recipeData.meals[0].strMeal || "N/A";
-    console.log(`Recipe Name: ${recipe}`);
-    await saveRecipeToServer(recipe); // Save the recipe to the server
 
     const id = recipeData.meals[0].idMeal || "N/A";
     const country_origin = recipeData.meals[0].strCountry || "N/A"; 
@@ -86,10 +96,33 @@ async function displayRecipeData() {
     for (let i = 1; i <= 20; i++) {
         const ingredient = recipeData.meals[0][`strIngredient${i}`];
         const measure = recipeData.meals[0][`strMeasure${i}`];
+        
         if (ingredient) {
             ingredients.push(`${measure} ${ingredient}`);
         }
     }
+
+    const favorite = false; // Default value for favorite
+    const rating = 0; // Default value for rating
+    const notes = ""; // Default value for notes
+
+
+    const recipe = {
+        id,
+        country_origin,
+        instructions,
+        category,
+        png,
+        ingredients,
+
+        //user editable fields
+        favorite, 
+        rating, 
+        notes
+    };
+
+    await saveRecipeToServer(recipe); // Save the recipe to the server
+
 
     // Print the recipe data to the console
     console.log(`Country of Origin: ${country_origin}`);
@@ -100,5 +133,48 @@ async function displayRecipeData() {
 
 }
 
-displayRecipeData(); 
-fetchRecipeData("Arrabiata");
+async function deleteRecipe(id) {
+    console.log("Deleting recipe with ID:", id);
+
+    const response = await fetch(
+        `/saved-recipes/${id}`,
+        {
+            method: 'DELETE'
+        }
+    );
+    console.log("Status Code:", response.status);
+
+    const result = await response.json();
+
+    console.log(result);
+}
+
+async function updateRecipe(id, updates) {
+    const response = await fetch(
+        `/saved-recipes/${id}`,
+        {
+            method: 'PUT',
+            headers: {
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify(updates)
+        }
+    );
+
+    const result = await response.json();
+
+    console.log(result);
+}
+
+// Example usage of the functions, note that we can only call these functions one at a time to avoid conflicts, otherwise no results will be returned. 
+// Call the function to create and save recipe data
+//createRecipeData(); 
+
+// Call delete recipe function with a sample recipe ID
+//deleteRecipe("52771"); 
+
+// Call update recipe function with a sample recipe ID and updates
+//updateRecipe("52771", { 
+    //rating: 5,
+   // notes: "This is a test note."
+//});
