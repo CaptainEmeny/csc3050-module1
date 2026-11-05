@@ -1,7 +1,7 @@
-import CardGenerator from './components/CardGenerator'
+import CardGenerator from '../components/CardGenerator'
 
-import SearchBar from './components/SearchBar'
-import NavBar from "./components/NavBar"
+import SearchBar from '../headers/SearchBar'
+import NavBar from "../headers/NavBar"
 
 import './Home.css'
 import { useEffect, useState } from 'react'
@@ -19,13 +19,11 @@ function Home() {
   return (
     <>
         <main id="main-content">
-            <div className= "navBar">
-                <NavBar/>
-                <SearchBar setCard= {setSearchFilter}/>
-            </div>
-            <h1><b>Cards</b></h1>
+            <h1><b>Recipe Hub</b></h1>
             <CardGenerator/>
+            <h2 className="title">Your home for 200+ delicious recipes. Updated daily!</h2>
         </main>
+        
     </>
     )
 }
