@@ -1,5 +1,8 @@
 import CardGenerator from './components/CardGenerator'
+
 import SearchBar from './components/SearchBar'
+import NavBar from "./components/NavBar"
+
 import './Home.css'
 import { useEffect, useState } from 'react'
 
@@ -17,7 +20,7 @@ function Home() {
     <>
         <main id="main-content">
             <div className= "navBar">
-                <h3>Nav Bar</h3>
+                <NavBar/>
                 <SearchBar setCard= {setSearchFilter}/>
             </div>
             <h1><b>Cards</b></h1>
