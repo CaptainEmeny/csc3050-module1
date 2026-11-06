@@ -1,31 +1,29 @@
+import { Link } from "react-router-dom"; 
+
 function GridCard({recipe}){
-    
+
+
+
 
     return(
-        <>
+        <Link to= {`/recipes/${recipe.idMeal}`} className="linkStyle">
             <article key ={recipe.id} className= "card">
-                <img src= {"/recipe-images/" + recipe.img} alt= {"Picture of " + recipe.name}/>
+                <img src= {recipe.strMealThumb} alt= {"Picture of " + recipe.name}/>
                 <h2 className= "title">
-                    <b>{recipe.name}</b>
+                    <b>{recipe.strMeal}</b>
                 </h2>
                 <p className= "description">
-                    {recipe.description}
+                    {recipe.strCategory}
                 </p>
 
                 
-                <button className="dropdown-menu-button" 
+                <button className="save-button" 
                 type="button"  
                 aria-expanded="false" 
-                aria-controls={recipe.id + "-dropdown-menu"}>More Info</button>
-                <div className="dropdown-menu" 
-                    id = {recipe.id + "-dropdown-menu"}
-                    hidden
-                    data-duration= {recipe.duration} 
-                    data-difficulty= {recipe.difficulty}
-                    data-cuisine= {recipe.cuisine}>
-                </div>
+                aria-controls={recipe.id + "-dropdown-menu"}>Save Recipe</button>
+
             </article>        
-        </>
+        </Link>
     );
 }
 

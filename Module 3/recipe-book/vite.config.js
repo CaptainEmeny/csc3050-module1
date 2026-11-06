@@ -7,5 +7,9 @@ export default defineConfig({
   plugins: [react(), commonjs()],
   build: {
     commonjsOptions: { transformMixedEsModules: true }
-  }
+  },
+  server: {
+    // Forward API so we can access it within our components later
+    proxy: { "/api": "http://localhost:3001" },
+  },
 })

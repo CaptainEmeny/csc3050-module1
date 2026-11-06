@@ -1,20 +1,8 @@
 import CardGenerator from '../components/CardGenerator'
 
-import SearchBar from '../headers/SearchBar'
-import NavBar from "../headers/NavBar"
-
 import './Home.css'
-import { useEffect, useState } from 'react'
 
 function Home() {
-
-    const [searchFilter, setSearchFilter]= useState("");
-
-    useEffect(() => {
-        console.log(searchFilter);
-
-    },[searchFilter])
-
 
   return (
     <>
