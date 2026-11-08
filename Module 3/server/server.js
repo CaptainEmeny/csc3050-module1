@@ -1,17 +1,16 @@
 const express = require("express");
 const path = require('path');
 const fs = require('fs');
-savedRecipes = []; 
 
 const app = express();
-const recipeFile = path.join(__dirname, 'saved-recipes.json');
+const recipeFile = path.join(__dirname, 'saved-recipes.json'); //file path to saved-recipes.json, where they are stored in local memory
 const publicPath = path.join(__dirname, 'public');
 
 app.use(express.json());
 app.use(express.static(publicPath));
 
 let savedRecipes = [];
-const port = 3000;
+const port = 3001;
 
 try {
     const data = fs.readFileSync(
@@ -57,6 +56,7 @@ app.get('/recipes/:id', async (req, res) => {
         }
 });
 
+// we push the api data associated with the recipe we selected to the local json file
 app.post('/save-recipe', (req, res) => {
     const recipe = req.body;
 
@@ -110,6 +110,8 @@ app.delete('/saved-recipes/:id', (req, res) => {
     console.log("Current Recipes:");
     console.log(savedRecipes);
 
+    // this function deletes the recipe from server memory but not the from the actual saved-recipe file
+    //we have to run this command now so that it can actually update with the deleted file in the external file
     saveRecipeToFile();
 
     res.json({
