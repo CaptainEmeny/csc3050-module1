@@ -36,9 +36,9 @@ app.get('/saved-recipes', (req, res) => {
 });
 
 
-app.get('/recipes/:name', async (req, res) => {
+app.get('/recipes/:id', async (req, res) => {
     try {
-        const recipe = req.params.name;
+        const recipe = req.params.idMeal;
 
 
         const response = await fetch(
@@ -94,7 +94,7 @@ app.delete('/saved-recipes/:id', (req, res) => {
 
 
     savedRecipes = savedRecipes.filter(
-        recipe => recipe.id !== id
+        recipe => recipe.idMeal !== id
     );
 
 
@@ -114,8 +114,7 @@ app.delete('/saved-recipes/:id', (req, res) => {
 app.put('/saved-recipes/:id', (req, res) => {
     const id = req.params.id;
     const recipe = savedRecipes.find(
-        r => r.id === id);
-
+        r => r.idMeal === id);
 
     if (!recipe) {
         return res.status(404).json({
