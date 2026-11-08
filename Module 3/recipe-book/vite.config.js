@@ -10,6 +10,8 @@ export default defineConfig({
   },
   server: {
     // Forward API so we can access it within our components later
-    proxy: { "/api": "http://localhost:3001" },
+    proxy: { "/saved-recipes": "http://localhost:3000",
+             "/save-recipe": "http://localhost:3000"
+     },
   },
 })
