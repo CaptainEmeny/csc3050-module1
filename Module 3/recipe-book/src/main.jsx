@@ -21,7 +21,7 @@ createRoot(document.getElementById('root')).render(
 
       <Routes>
         <Route path="" element={<Home/>}/>
-        <Route path="/recipe-page" element={<RecipePage/>}/>
+        <Route path="/recipes/:id" element={<RecipePage/>}/>
         <Route path="/random-recipe" element={<RandomRecipePage/>}/>
       </Routes>
 

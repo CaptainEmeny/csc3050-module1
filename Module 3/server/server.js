@@ -104,7 +104,7 @@ app.delete('/saved-recipes/:id', (req, res) => {
     }
 
     savedRecipes = savedRecipes.filter(
-        recipe => recipe.id !== id
+        recipe => recipe.idMeal !== id
     );
 
     console.log("Current Recipes:");
