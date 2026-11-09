@@ -10,7 +10,7 @@ app.use(express.json());
 app.use(express.static(publicPath));
 
 let savedRecipes = [];
-const port = 3001;
+const port = 3000;
 
 try {
     const data = fs.readFileSync(
