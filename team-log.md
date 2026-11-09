@@ -148,3 +148,59 @@ open the single html file.
   - Get JavaScript to work again within code.
   - Make the Cards their own component.
   - Link up the server to the web page, allowing for communications between the front-end and back-end. 
+
+
+## 2026-10-29: Day 2 Workshop:
+* **Present:** Kevin Borges, Douglas Mata
+* **Scribe:** Douglas Mata
+* **Standup**
+  - **Douglas:** I played around some more with the API, however, I have not been successful in actually linking it to the website yet. Hopefully, I will be able to establish a connection between my express server the api and the website by the end of the work session. 
+  - **Kevin:** I was able to get information fed into the cards from a JSON file that we will use to feed information to the website using API. Images are not working yet, hopefully by the end of this session that will work. Our eventual end goal in terms of functionality is that adding a new recipe to the webpage is as easy as just adding information about a recipe to the JSON file and then a card will be generated with that recipe information. I was also able to create a mapping function to facilitate this, hopefully this format will allow us to implement a searching fucntion in the future. 
+
+* **Plan**
+  1. Get images working. Right now we assume it is because there is not an established file path and we have to upload the iamges to the server some other way directly as opposed to getting it from directly from a folder. 
+  2. Establish a connection between express server and api.
+  3. Establish a connection between express server and website and have all 3 compoents communicating. 
+
+* **Build** 
+  **Shipped:** 1 and 3
+
+* **Review**
+    - We were able to import images into the website by putting them into a public folder accessing them that way. We previously had them in the sources folder which we believe makes them compile them differently. Once we put them in the pubic folder we are able to access them directly. 
+    - We got a server working and fed our html, css, and js into the server. We have yet to connect the API to it. 
+
+* **Handoff package:**
+    - **Stopping point:** As of right now we both essentially have our individual components fully functional. We still need to actually merge them to get them both working. 
+
+* **Commitments before next Day 2:**
+    - We have been moving a little slowly in this project. We are both committed to coming together an extra day before Thursday to merge them and get them working so we are at a better place for next Thursday. 
+    - To do this we both need to have our pieces fully functional before that next early session. 
+    - I will also begin work on the API contract once the API is connected to the server. Most of the work on this is expected to be completed next Thursday.
+
+
+## 2026-10-29: Day 2 Workshop:
+* **Present:** Kevin Borges, Douglas Mata
+* **Scribe:** Kevin Borges
+* **Standup**
+  - **Douglas:** I got server to run with a basic GET command, and now I am working on getting the rest of the CRUD commands to work out. I made the style for the recipe landing page and the css for it as well. I am hoping to be able to merge everything together with Kevin today, and it will all work nicely. 
+  - **Kevin:** I was able to get the search bar to work and perform a function when typed, though I plan on adding more functionality to it on a later date. For now, I want to add a Nav Bar so that we can start working on different pages and start getting the server commands to work. 
+
+* **Plan**
+  1. Create a NAV Bar.
+  2. Get CRUD commands to work.
+  3. Create many different pages.
+
+* **Build** 
+  **Shipped:** 3 and 3
+
+* **Review**
+    - React Router is now fully functional on the webpage. This allows for us to create pages with different assets and easily swap between them at a moments notice.
+    - The Navigation Bar was also fully implemented, allowing for the user to switch between three different pages on a whim.
+    - We got the server working, with all of the CRUD commands working and writing to a json file.
+
+* **Handoff package:**
+    - **Stopping point:** Right now, we got React Router to work, along with getting the CRUD actions working on the server side. Now we just have to put it all together.
+
+* **Commitments before next Day 2:**
+    - Now with the deadline creeping up we must finish up this program **before Sunday.** The Front-end still has to connect with the API, and it has to be able to do all CRUD actions with the recipes.
+    - There will also need to be some sort of third page added, since we *do* have three, though at the moment one of them is a copy of the other one, which means that they need to be adjusted to be different enough.
