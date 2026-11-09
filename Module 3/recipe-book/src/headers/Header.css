@@ -1,3 +1,50 @@
+/* Entire Header Bar */
+.headerBar {
+    display: grid;
+
+    margin: 1rem;
+
+    grid-template-columns: auto auto;
+    align-items: center;
+}
+
+/* NAV BAR */
+#navBar {
+    display:grid;
+    grid-template-columns: repeat(2, 1fr); 
+
+    height:100%;
+    width: 30rem;
+    margin-left: 3rem;
+
+    background-color: black;
+
+    border-radius: 10px;
+}
+
+.navBarBox {
+    display: flex;
+
+    font-family: Arial, Helvetica, sans-serif;;
+    font-size: 1.1rem;
+    text-align: center;
+
+    justify-content: center;
+    align-items: center;
+
+    text-decoration: none;
+    color:white;
+
+    height: 100%;
+
+}
+.navBarBox:hover {
+    background-color:#3b3b3b;
+    border-radius: 10px;
+}
+
+/* SEARCH BAR */
+
 #searchBar {
     display: flex;
     align-items: center;
@@ -56,4 +103,9 @@
     border-top-right-radius: 100px;
     border-bottom-right-radius: 100px;
 
+}
+
+@media (max-width: 480px) {
+
+    
 }

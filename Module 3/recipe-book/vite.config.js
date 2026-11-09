@@ -7,5 +7,11 @@ export default defineConfig({
   plugins: [react(), commonjs()],
   build: {
     commonjsOptions: { transformMixedEsModules: true }
-  }
+  },
+  server: {
+    // Forward API so we can access it within our components later
+    proxy: { "/saved-recipes": "http://localhost:3000",
+             "/save-recipe": "http://localhost:3000"
+     },
+  },
 })

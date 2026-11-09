@@ -1,4 +1,4 @@
-import './SearchBar.css'
+import './Header.css'
 
 function SearchBar({setCard}){
 
