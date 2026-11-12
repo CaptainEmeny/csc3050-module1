@@ -35,12 +35,15 @@ Now your folder named **tests** should be able to run any file with the extentio
 
 To run the client, go to the terminal and type:
 
-*   cd "Module 3"
-*   cd recipe-book
-*   npm install react-router-dom
+```
+cd "Module 3"
+cd recipe-book
+npm install react-router-dom
+```
 
 To run the site, type:
-*   npm run dev
-
+```
+npm run dev
+```
 
 ## NOTE: To run some of these commands, you will need NodeJS installed on your client
